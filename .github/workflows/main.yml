@@ -52,6 +52,7 @@ jobs:
 
   pybuild:
     runs-on: python
+    steps:
     - name: Show environment
       run: |
         which python
