@@ -23,14 +23,23 @@ jobs:
     - uses: actions/checkout@v2
 
     # Runs a single command using the runners shell
-    - name: Run a one-line script
-      run: echo Hello, world!
+    #- name: Run a one-line script
+    #  run: echo Hello, world!
 
-    - name: Run uptime
+    - name: Show environment
       run: |
         uptime
         which perl
         which python
         which python3
+        which ruby
+        which node
+        which java
+        perl -v
+        python -V
+        python3 -V
+
+    - name: Run tests
+      run: pytest
 
 
